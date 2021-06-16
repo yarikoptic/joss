@@ -57,7 +57,7 @@ TODO
 
 .hero {
     padding: 3em 0;
-    background-image: url('/assets/header_leaf.png');
+    background-image: url(image_path('header_leaf.png'));
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #041927;
@@ -866,7 +866,7 @@ a.navbar-brand:hover {
 .navbar-brand:before{
     display: block;
     content: ' ';
-    background-image: url('/assets/neurolibre_logo_outline.svg');
+    background-image: url(image_path('neurolibre_logo_outline.svg')); 
     background-size: 50px 50px;
     background-repeat: no-repeat;
     height: 50px;
