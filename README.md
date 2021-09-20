@@ -1,6 +1,6 @@
 # NeuroLibre
 
-[![Build Status](https://travis-ci.com/neurolibre/neurolibre.svg?branch=master)](https://travis-ci.com/neurolibre/neurolibre)
+[![Build Status](https://github.com/neurolibre/neurolibre/actions/workflows/tests.yml/badge.svg)](https://github.com/neurolibre/neurolibre/actions/workflows/tests.yml)
 
 <img align="left" src="https://conp-pcno.github.io/images/neurolibre-icon-red.png">
 
