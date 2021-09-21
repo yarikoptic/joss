@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/neurolibre/neurolibre/actions/workflows/tests.yml/badge.svg)](https://github.com/neurolibre/neurolibre/actions/workflows/tests.yml)
 
-<img align="left" src="https://conp-pcno.github.io/images/neurolibre-icon-red.png">
+<img align="left" src="https://raw.githubusercontent.com/neurolibre/neurolibre/master/app/assets/images/conp_logo.png">
 
 This is the website of NeuroLibre, a preprint service for interactive data analysis in neuroscience. The site is rendered at [neurolibre.org](https://neurolibre.org). You can also check out the [NeuroLibre docs](https://docs.neurolibre.org).
 
