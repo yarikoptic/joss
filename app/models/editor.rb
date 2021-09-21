@@ -2,6 +2,7 @@ class Editor < ActiveRecord::Base
   validates :kind, presence: true, inclusion: { in: ["board", "topic", "emeritus"] }
   validates :first_name, presence: true
   validates :last_name, presence: true
+  validates :email, presence: true,  unless: Proc.new { |editor| editor.kind == "emeritus"  }
   validates :login, presence: true, unless: Proc.new { |editor| editor.kind == "emeritus"  }
 
   belongs_to :user, optional: true
@@ -54,6 +55,10 @@ class Editor < ActiveRecord::Base
 
   def full_name
     [first_name, last_name].join(" ")
+  end
+
+  def orcid
+    user.uid
   end
 
   def clear_title

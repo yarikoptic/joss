@@ -8,7 +8,7 @@ namespace :utils do
     all_papers = Paper.where('created_at > ?', '2020-09-01')
 
     all_papers.each do |paper|
-      eic = Editor.find_by_login('emdupre')
+      eic = Editor.find_by_login('pbellec')
       paper.set_meta_eic(eic)
     end
   end

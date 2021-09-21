@@ -17,7 +17,7 @@ namespace :permissions do
 
     # Loop through each collaborator and check if they need permissions
     collaborator_logins.sort.each do |login|
-      next if login == 'whedon'
+      next if login == 'roboneuro'
 
       unless should_have_permissions.include?("@#{login}")
         GITHUB.remove_collaborator(reviews_repo, login)
