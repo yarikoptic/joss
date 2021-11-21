@@ -2,6 +2,7 @@
 **Repository:** <a href="<%= paper.repository_url %>" target ="_blank"><%= paper.repository_url %></a>
 **Editor:** Pending
 **Reviewer:** Pending
+**Managing EiC:** <%= eic_name %>
 
 **Author instructions**
 
@@ -9,9 +10,11 @@
 
 Thanks for submitting your paper to <%= abbreviation %> <%= paper.submitting_author.github_username %>.
 
-**Manager instructions**
+<%= paper.submitting_author.github_username %> if you have any suggestions for potential reviewers then please mention them here in this thread (without tagging them with an @). In addition, [this list of people](<%= reviewers %>) have already agreed to review for <%= abbreviation %> and may be suitable for this submission (please start at the bottom of the list).
 
-The <%= abbreviation %> submission bot @roboneuro is here to help you find and assign testers and start the main review. To find out what @roboneuro can do for you type:
+**Editor instructions**
+
+The <%= abbreviation %> submission bot @roboneuro is here to help you find and assign reviewers and start the main review. To find out what @roboneuro can do for you type:
 
 ```
 @roboneuro commands

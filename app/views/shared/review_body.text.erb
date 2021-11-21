@@ -15,17 +15,19 @@ Status badge code:
 HTML: <a href="<%= url %>/papers/<%= paper.sha %>"><img src="<%= url %>/papers/<%= paper.sha %>/status.svg"></a>
 Markdown: [![status](<%= url %>/papers/<%= paper.sha %>/status.svg)](<%= url %>/papers/<%= paper.sha %>)
 ```
-**Testers and authors**:
+**Reviewers and authors**:
 
 Please avoid lengthy details of difficulties in the review thread. Instead, please create a new issue in the <a href="<%= paper.repository_url %>" target="_blank">target repository</a> and link to those issues (especially acceptance-blockers) by leaving comments in the review thread below. (For completists: if the target issue tracker is also on GitHub, linking the review thread in the issue or vice versa will create corresponding breadcrumb trails in the link target.)
 
-## Tester instructions & questions
+## Reviewer instructions & questions
 
 <%= reviewers.join(' & ').html_safe %>, please carry out your review in this issue by updating the checklist below. If you cannot edit the checklist please:
 1. Make sure you're logged in to your GitHub account
 2. Be sure to accept the invite at this URL: https://github.com/openjournals/joss-reviews/invitations
 
-The tester guidelines are available here: https://joss.readthedocs.io/en/latest/reviewer_guidelines.html. Any questions/concerns please let <%= editor %> know.
+The reviewer guidelines are available here: https://joss.readthedocs.io/en/latest/reviewer_guidelines.html. Any questions/concerns please let <%= editor %> know.
+
+✨ **Please start on your review when you are able, and be sure to complete your review in the next six weeks, at the very latest** ✨
 
 <%- reviewers.each do |reviewer| %>
 ## Review checklist for <%= reviewer %>
