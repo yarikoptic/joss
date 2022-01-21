@@ -24,32 +24,196 @@
 
         <p>Not all Jupyter notebooks are eligible to be published in NeuroLibre.</p>
 
-        <p>NeuroLibre submissions must:</p>
+        <p>NeuroLibre submissions are expected to meet the following criteria:</p>
 
         <ul>
-          <li>Be open source (i.e., have an <%= link_to "OSI-approved license", "https://opensource.org/licenses/category", :target => "_blank" %>).</li>
+          <li> NeuroLibre submissions must be based on open source software and data (i.e., have an <a href="https://opensource.org/licenses/category">OSI-approved license)</a>.</li>
+          <li> The execution of NeuroLibre submissions must also respect the limitations of the platform, both in terms of data size and execution duration - see our <a href="https://docs.neurolibre.org">technical documentation</a> for details.
         </ul>
 
         <p>
-        Authors wishing to make a pre-submission enquiry should <%= link_to "open an issue", "https://github.com/#{Rails.application.settings["github"]}/issues/new?title=Pre-submission%20enquiry"%> on the <%= setting(:abbreviation) %> repository.
+        Authors wishing to make a pre-submission enquiry are welcome to <%= link_to "open an issue", "https://github.com/#{Rails.application.settings["github"]}/issues/new?title=Pre-submission%20enquiry"%> on the <%= setting(:abbreviation) %> repository.
         </p>
       </div>
 
       <div class="generic-content-item" id="costs">
         <h1>Cost and Sustainability Model</h1>
+       
         <p><%= setting(:name) %> is an open-access publishing platform <em>committed to running at minimal costs,
         with zero publication fees (<a href="https://en.wikipedia.org/wiki/Article_processing_charge">article processing charges</a>) or subscription fees</em>.</p>
-        <p>NeuroLibre is currently supported by by <a href="https://conp.ca/">the Canadian Open Neuroscience Platform</a>.</p>
-      </div>
+        <p>NeuroLibre is an initiative of <a href="https://conp.ca/">the Canadian Open Neuroscience Platform</a>, with funding from:.</p>
+       <center>
+        <div class="row">
+        <div class="col-lg-3">
+        <center><%= link_to image_tag("logo-brain-canada.svg", class: "center"), "https://braincanada.ca/" %></center>
+        </div>
+        <div class="col-lg-3">
+        <center><h3> <br>Courtois Foundation </h3></center>
+        </div>
+        <div class="col-lg-3">
+        <center><%= link_to image_tag("mhi_logo.png", class: "center", height: 90), "https://fondationicm.org/en/" %></center>
+        </div>
+        </div>
+        </div>
+        </center>
 
       <div class="generic-content-item" id="content_license">
-        <h1>Content Licensing & Open Access</h1>
-        <p>
-          Copyright of <%= setting(:abbreviation) %> papers is
-          retained by submitting authors and accepted papers are subject to a
-          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          Creative Commons Attribution 4.0 International License</a>.
-        </p>
+        <h1>Team members</h1>
+        
+        <table>
+        <tr>
+        <td><a title="Platform design">|&nbsp;🤔 &nbsp;Platform design&nbsp;|</a></td>
+        <td><a title="Infrastructure"> &nbsp;🛤 &nbsp;Infrastructure&nbsp; |</a></td>
+        <td><a title="Editor"> &nbsp;📖 &nbsp;Editor&nbsp; |</a></td>
+        <td><a title="Reviewer"> &nbsp;👀 &nbsp;Reviewer&nbsp; |</a></td>
+        <td><a title="Developer"> &nbsp;💻 &nbsp;Developer&nbsp; |</a></td>
+        <td><a title=” Planning and organization” > &nbsp;🗒 &nbsp;Planning and organization &nbsp;|</a></td>
+        </tr>
+        </table>
+        <br>
+     <table>
+      <tr>
+      <td>
+        <a href="https://github.com/pbellec">
+        <img src="https://avatars.githubusercontent.com/u/1670887?v=4?s=100" width="150px;" alt=""/>
+        <br /><sub><b>Pierre Bellec</b></sub>
+      </a>
+      <br />
+        <a title="Design">🤔</a>
+        <a title="Infrastructure">🛤 </a>
+        <a title="Editor">📖 </a>
+      </td>
+
+      <td>
+      <a href="https://github.com/mathieuboudreau">
+      <img src="https://avatars.githubusercontent.com/u/1421029?v=4" width="150px;" alt=""/>
+      <br /><sub><b>Mathieu Boudreau</b></sub>
+    </a>
+    <br />
+      <a title="Design">🤔</a>
+      <a title="Reviewer">👀 </a>
+      <a title="Developer">💻 </a>
+    </td>
+
+      <td>
+      <img src="https://pbs.twimg.com/profile_images/1038076314803220487/sI9QxfZh_400x400.jpg" width="150px;" alt=""/>
+      <br /><sub><b>Mary Chin</b></sub>
+    <br />
+    <a title=” Planning and organization” >🗒 </a>
+    </td>
+
+    <td>
+    <a href="https://github.com/samirdas">
+    <img src="https://www.mcgill.ca/neuro/files/neuro/styles/wysiwyg_medium/public/speaker-portraits-day2_500x500_samir_das.png?itok=jKUPcUc8" width="150px;" alt=""/>
+    <br /><sub><b>Samir Das</b></sub>
+  </a>
+  <br />
+    <a title="Design">🤔</a>
+    <a title="Infrastructure">🛤 </a>
+  </td>
+
+  <td>
+  <a href="https://github.com/emdupre">
+  <img src="https://avatars.githubusercontent.com/u/15017191?v=4" width="150px;" alt=""/>
+  <br /><sub><b>Elizabeth DuPre</b></sub>
+</a>
+<br />
+  <a title="Design">🤔</a>
+  <a title="Developer">💻 </a>
+  <a title="Reviewer">👀 </a>
+  <a title="Editor">📖 </a>
+</td>
+
+<td>
+<a href="https://www.mcgill.ca/neuro/jean-baptiste-poline-phd">
+<img src="https://www.mcgill.ca/neuro/files/neuro/styles/medium_focal__220_x_220_/public/poline_0.jpeg?itok=nSn7FUzq" width="150px;" alt=""/>
+<br /><sub><b>Jean-Baptiste Poline</b></sub>
+</a>
+<br />
+<a title="Design">🤔</a>
+<a title="Editor">📖 </a>
+</td>
+
+<td>
+<a href="https://agahkarakuzu.github.io">
+<img src="https://agahkarakuzu.github.io/authors/admin/avatar_hudd1e2e039f2837eaf38eed0b891bb44d_60695_250x250_fill_q90_lanczos_center.jpg" width="150px;" alt=""/>
+<br /><sub><b>Agah Karakuzu</b></sub>
+</a>
+<br />
+<a title="Design">🤔</a>
+<a title="Infrastructure">🛤 </a>
+<a title="Developer">💻 </a>
+<a title="Reviewer">👀 </a>
+<a title="Editor">📖 </a>
+</td>
+    </tr>
+<tr>
+<td>
+<a href="https://github.com/ltetrel">
+<img src="https://avatars.githubusercontent.com/u/37963074?v=4" width="150px;" alt=""/>
+<br /><sub><b>Loic Tetrel</b></sub>
+</a>
+<br />
+<a title="Design">🤔</a>
+<a title="Infrastructure">🛤 </a>
+<a title="Developer">💻 </a>
+<a title="Reviewer">👀 </a>
+<a title="Editor">📖 </a>
+</td>
+
+<td>
+<a href="https://www.polymtl.ca/expertises/en/stikov-nikola">
+<img src="https://www.force11.org/sites/default/files/styles/member_profile_image__480x480_/public/d7/photos/members/stikov_photo.jpg?itok=oAIzmNEN" width="150px;" alt=""/>
+<br /><sub><b>Nikola Stikov</b></sub>
+</a>
+<br />
+<a title="Design">🤔</a>
+<a title="Editor">📖 </a>
+</td>
+</tr>
+    
+    </table>
+<br><br>
+<h1>Partners</h1>
+
+<h4>Neurolibre is possible thanks to the support of several partners. These partners provide either software, hardware, and maintenance that make the NeuroLibre infrastructure possible.</h4>
+<br><br>
+<div class="row">
+<div class="col-lg-3">
+<center><%= link_to image_tag("https://jupyterbook.org/_static/logo-wide.svg", class: "center"), "https://jupyterbook.org" %></center>
+</div>
+<div class="col-lg-3">
+<center><%= link_to image_tag("https://avatars.githubusercontent.com/u/9032431?s=200&v=4", class: "center", height: 100), "https://github.com/openjournals" %> <sub><h3 style="color:black;">Open Journals</h3></sub></center>
+</div>
+<div class="col-lg-3">
+<center><%= link_to image_tag("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUix-USX7jZDHFH07LZ7ic_dgPwKMaR-4zfQ&usqp=CAU", class: "center"), "https://www.cancercomputer.com/" %></center>
+</div>
+</div>
+
+
+<br>
+<h3>The NeuroLibre team is composed of members from the following research groups:</h3>
+
+<ul>
+<li><a href="https://neuro.polymtl.ca/">NeuroPoly Lab</a></li>
+<li><a href="https://simexp.github.io/lab-website/">Brain Simulation and Exploration (SIMEXP) Lab</a></li>
+<li><a href="https://neurodatascience.github.io/">ORIGAMI Lab</a></li>
+<li><a href="https://mcin.ca/">McGill Center for Integrative Neuroscience</a></li>
+</ul>
+
+<h3>Neurolibre is supported by the following institutions:</h3>
+
+<ul>
+<li><a href="https://polymtl.ca/">Polytechnique Montréal</a></li>
+<li><a href="https://www.umontreal.ca/">Université de Montréal</a></li>
+<li><a href="https://criugm.qc.ca/en/">Centre de recherche de l’institut universitaire de Montréal]</a></li>
+<li><a href="https://www.mcgill.ca/">McGill University</a></li>
+<li><a href="https://www.mcgill.ca/neuro/">Montréal Neurological Institute</a></li>
+</ul>
+
+
+
+
       </div>
     </div>
   <div class="col-lg-3 about-nav">
@@ -58,7 +222,7 @@
         <a class="menu-item selected" href="#about">About</a>
         <a class="menu-item" href="#submitting">Submission scope</a>
         <a class="menu-item" href="#costs">Cost and Sustainability Model</a>
-        <a class="menu-item" href="#content_license">Content Licensing &amp; Open Access</a>
+        <a class="menu-item" href="#content_license">Team Members &amp; Partners</a>
       </nav>
 
       <a class="menu-btn" href="">Author information</a>
