@@ -1,4 +1,5 @@
 [codespell]
 skip = .git,*.pdf,*.svg
-#
-# ignore-words-list =
+# for some specific composite skips etc
+ignore-regex = view=FitH
+ignore-words-list = nwo,rouge
